@@ -1,0 +1,6 @@
+#!/bin/sh
+
+qmake -o Makefile.g++ msp430emu.pro -platform linux-g++
+gmake -f Makefile.g++ clean
+gmake -f Makefile.g++
+cp ../../../bin/plugins/libmsp430emu_qt.so.1.0.0 ../../../bin/plugins/msp430emu_qt.plx

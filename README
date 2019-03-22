@@ -1,0 +1,27 @@
+This is an MSP430 emulator plugin module for IDA Pro 6.4 and 6.5.
+
+INSTALLATION:
+
+Copy the appropriate modules for IDA 6.4 of IDA 6.5 and your platform
+into your <IDA>/plugins directory, where <IDA> is the base directory
+of your IDA install.
+
+RUNNING:
+
+After loading your MSP430 binary in IDA, activate the plugin via the 
+Edit/Plugins menu (or Alt-F5 on Windows). The plugin will attempt
+to read the reset vector at set the initial PC value accordingly.
+Make sure that PC is pointing where you want it before you start
+stepping through code.
+
+The emulator was developed primarily for use in solving the challenges
+at https://microcorruption.com/ so many aspects of the emulator are
+specific to the platform used to host those challenges.
+
+Two menu options of note are available on the Emulate menu. These options
+allow you to ask the emulator to a) break on every system call, and b) 
+emulate the bugs that are present in the microcorruption emualtor. IF YOU
+ARE USING THE EMULATOR TO HELP ANALYZE THE MICROCORRUPTION CHALLENGES MAKE
+SURE THAT YOU ENABLE THE MICROCORRUPTION BUGS OPTION.
+
+Questions and comments to: cseagle at gmail d0t com
