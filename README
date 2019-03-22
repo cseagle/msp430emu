@@ -1,8 +1,8 @@
-This is an MSP430 emulator plugin module for IDA Pro 6.4 and 6.5.
+This is an MSP430 emulator plugin module for IDA Pro 6.4 and later.
 
 INSTALLATION:
 
-Copy the appropriate modules for IDA 6.4 of IDA 6.5 and your platform
+Copy the appropriate plugin modules for your version of IDA and your platform
 into your <IDA>/plugins directory, where <IDA> is the base directory
 of your IDA install.
 
